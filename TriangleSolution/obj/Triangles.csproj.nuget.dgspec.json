@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progects Visual Studio\\Марафон\\task-alexandra-kotenko-yaroslav-blonskiy\\TriangleSolution\\Triangles.csproj": {}
+    "D:\\Progects Visual Studio\\TestForPractice\\TriangleSolution\\Triangles.csproj": {}
   },
   "projects": {
-    "D:\\Progects Visual Studio\\Марафон\\task-alexandra-kotenko-yaroslav-blonskiy\\TriangleSolution\\Triangles.csproj": {
+    "D:\\Progects Visual Studio\\TestForPractice\\TriangleSolution\\Triangles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progects Visual Studio\\Марафон\\task-alexandra-kotenko-yaroslav-blonskiy\\TriangleSolution\\Triangles.csproj",
+        "projectUniqueName": "D:\\Progects Visual Studio\\TestForPractice\\TriangleSolution\\Triangles.csproj",
         "projectName": "Triangles",
-        "projectPath": "D:\\Progects Visual Studio\\Марафон\\task-alexandra-kotenko-yaroslav-blonskiy\\TriangleSolution\\Triangles.csproj",
+        "projectPath": "D:\\Progects Visual Studio\\TestForPractice\\TriangleSolution\\Triangles.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Progects Visual Studio\\Марафон\\task-alexandra-kotenko-yaroslav-blonskiy\\TriangleSolution\\obj\\",
+        "outputPath": "D:\\Progects Visual Studio\\TestForPractice\\TriangleSolution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

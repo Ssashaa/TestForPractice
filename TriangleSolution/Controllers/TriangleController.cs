@@ -188,22 +188,5 @@ namespace Triangles.Controllers
 
             return Task.Run(() => _triangleService.InfoGreatestPerimeter(tr)).Result;
         }
-
-        /// <summary>
-        /// The method checks if the given triangles exists and invokes the NumbersPairwiseNotSimilar method
-        /// </summary>
-        /// <param name="tr"> The method takes an array of triangles </param>
-        /// <returns> The method returns the info about the triangles chosen from the given array which are pairwise non-similar </returns>
-        [ActionName("PairwiseNonSimilar")]
-        public string NumbersPairwiseNotSimilar([FromQuery] Triangle[] tr)
-        {
-            if (tr.Any(t => !new TriangleValidation(t).IsValid()))
-            {
-                Response.StatusCode = (int)HttpStatusCode.BadRequest;
-                return "Triangle has incorrect a side(s).";
-            }
-
-            return Task.Run(() => _triangleService.NumbersPairwiseNotSimilar(tr)).Result;
-        }
     }
 }
