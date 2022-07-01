@@ -122,7 +122,7 @@ namespace Triangles.Controllers
         }
 
         /// <summary>
-        /// The method checks if the given triangle exists and invokes the IsIsosceles method
+        /// The method checks if the given triangle exists and invokes the IsIsosceles method1
         /// </summary>
         /// <param name="triangle"> The method takes a triangle </param>
         /// <returns> The method returns True or False </returns>
