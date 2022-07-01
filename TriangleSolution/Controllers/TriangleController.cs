@@ -156,6 +156,23 @@ namespace Triangles.Controllers
         }
 
         /// <summary>
+        /// The method checks if the given triangles exists and invokes the InfoGreatestArea method
+        /// </summary>
+        /// <param name="tr"> The method takes an array of triangles </param>
+        /// <returns> The method returns information about the triangle with the greatest area </returns>
+        [ActionName("GreatestByArea")]
+        public string InfoGreatestArea([FromQuery] Triangle[] tr)
+        {
+            if (tr.Any(t => !new TriangleValidation(t).IsValid()))
+            {
+                Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                return "Triangle has incorrect a side(s).";
+            }
+
+            return Task.Run(() => _triangleService.InfoGreatestArea(tr)).Result;
+        }
+
+        /// <summary>
         /// The method checks if the given triangles exists and invokes the InfoGreatestPerimeter method
         /// </summary>
         /// <param name="tr"> The method takes an array of triangles </param>
